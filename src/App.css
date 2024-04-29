@@ -25,7 +25,7 @@ body::-webkit-scrollbar {
 }
 
 .header {
-  grid-column-start: 1;
+    grid-column-start: 1;
 		grid-column-end: 3;
 		background-color: #1d1d1d;
 		color: white;
@@ -34,3 +34,18 @@ body::-webkit-scrollbar {
 		font-size: 20px;
 		font-weight: bold;
 }
+
+.sections {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  color: #1d1d1d;
+  padding-left: 1vw;
+  font-size: 15px;
+  overflow-y:scroll;
+}
+
+.dates {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
