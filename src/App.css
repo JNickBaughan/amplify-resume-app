@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#root {
+  max-width: 1550px;
+  margin: 0 auto; 
+  height: 96vh;
+  padding: 1px 0;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  grid-column-start: 1;
+		grid-column-end: 3;
+		background-color: #1d1d1d;
+		color: white;
+		align-content: center;
+		padding-left: 1vw;
+		font-size: 20px;
+		font-weight: bold;
+}
