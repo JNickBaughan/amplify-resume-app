@@ -1,0 +1,33 @@
+
+@media (max-height: 968px)
+{
+	
+	#parcelViewerWrapper, #scrollPV, #scroll, #contentWrapper{/*this section hides the scroll bar*/
+		
+		height: 775px;
+		
+		
+	}
+
+}
+
+@media (max-height: 868px)
+{
+	
+	#scroll, #parcelViewerWrapper, #scrollPV, #contentWrapper{
+		
+		height:675px;
+		
+	}
+}
+
+@media (max-height: 768px)
+{
+	#scroll, #parcelViewerWrapper, #scrollPV, #contentWrapper{
+		height: 575px;
+	}
+
+}
+
+
+

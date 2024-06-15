@@ -1,0 +1,116 @@
+
+
+@media (max-width: 1000px)
+{
+	#parcelViewerWrapper{/*this section hides the scroll bar*/
+	width: 80%;
+	height: 100%;
+	top: 90px;
+	z-index: 100;
+	margin-left: auto;
+	margin-right:auto;
+	overflow: hidden;
+	
+}
+
+	.outterContainer{
+		
+		width: 70%;
+	}
+	
+	.innerContainter{
+		
+		width: 90%;
+	}
+
+	#scroll{
+		margin: 10px;
+	}
+	
+	.container{
+		width:105%;
+	}
+	
+	.bottom_fade {
+		height: 20px;
+		position: fixed;
+		bottom: 40px;
+		display: none;
+	}
+	
+	.top_fade{
+		height: 20px;
+	}
+	
+	.contentTitle{
+	display: block;
+	font-size: 22px;
+	
+}
+
+.firstContentTitle{
+	margin-top: 90px;
+	
+}
+
+.startContainer{
+	margin-top: 60px;
+}
+	
+	.circleImage{
+		padding-bottom: 10px;
+	}
+	
+	#profileImage{
+		margin-bottom: 12px;
+	}
+	
+	.innerAnchor{
+		
+		width: 50%;
+		margin: 0 auto;
+	}
+	
+	#nav_wrap{
+		display: none;
+	}
+	
+	#contentWrapper{
+		float: none;
+		width:100%;
+	}
+	
+	#minorContent{
+		display: none;
+	}
+	
+	#mainContentWrapper {
+		
+		float: none;
+	}
+	
+	#mainContent{
+		margin-left: 30px;
+	}
+
+
+}
+
+@media (max-width: 800px){
+	
+	#mainContent{
+		width: 600px;
+	}
+	
+	#scroll{
+		width: 615px;
+	}
+	
+	.container{
+		width: 590px;
+	}
+	
+	
+
+}
+

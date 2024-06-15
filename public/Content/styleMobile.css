@@ -1,0 +1,195 @@
+
+
+@media (max-width: 640px)
+{
+	
+
+	/*Header Section*/
+	#header_container { 
+		border-radius: 0;
+		height:95px;  
+		margin-right: 0;
+		margin-left: 0;
+		position:fixed; 
+		width:100%; 
+		top:0; 
+	}
+	
+	#header{ 
+		line-height: .7em;
+		text-align: center;
+		font-style: normal;
+		font-weight: 500;
+		margin-bottom: 20px;
+		margin: 0 auto;
+		font-size: 55px;
+		width: 90%;
+		color: white;
+		margin-top: 10px;
+		position: relative;
+		top: 0;
+	}
+	
+	.header_circle {
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin: 0 auto;
+		background: white;
+		border: 2px solid #777;
+		float: none;
+		position: static;
+	}
+	
+	.name{
+		display: inline-block;
+		text-align: center;
+		font-style: normal;
+		margin-bottom: 20px;
+		font-size: 15px;
+		color: white;
+		left: 100px;
+		display: block;
+		float: none;
+		margin: 0 auto;
+		position: static;
+		height: 30px;
+	}
+	
+	#contact{
+		width: 100%;
+		height: 40px;
+		float: none;
+		padding-bottom:0px;
+		position: fixed;
+		line-height: 1.8em;
+		background-color: #352D31;
+		top: initial;
+		bottom: 0px;
+		right: 0px;
+		z-index: 50000;
+		padding: 8px;
+		
+	}
+
+	/*END: Header Section*/
+	
+	
+	
+	
+	
+	#scroll{
+		margin: 10px;
+		
+	}
+	
+	.container{
+		width:80%;
+	}
+
+
+	#desktopContact{
+		display: none;
+	}
+	
+	
+	
+	.bottom_fade {
+		height: 1px;
+		position: fixed;
+		bottom: 40px;
+	}
+	
+	.top_fade{
+		height: 1px;
+	}
+	
+	.contentTitle{
+		display: block;
+		font-size: 22px;
+		margin-top: 10px;
+		margin-bottom:10px;
+		margin-left: 40px;
+	}
+
+	.firstContentTitle{
+		margin-top: 90px;
+		
+	}
+
+	.startContainer{
+		margin-top: 60px;
+	}
+	
+	.circleImage{
+		padding-bottom: 10px;
+	}
+	
+	#profileImage{
+		margin-bottom: 12px;
+	}
+	
+	.innerAnchor{
+		
+		width: 50%;
+		margin: 0 auto;
+	}
+	
+	#nav_wrap{
+		display: none;
+	}
+	
+	#content_wrap{
+		float: none;
+		padding: 10px;
+		width:90%;
+	}
+	
+	#minorContent{
+		display: none;
+	}
+	
+	#mainContentWrapper {
+		
+		float: none;
+	}
+	
+	.endContainer{
+		margin-bottom: 190px;
+	}
+	
+	
+
+
+	
+}
+
+
+
+@media (max-width: 520px)
+{
+	.container{
+		width:60%;
+		
+	}
+	
+	
+	
+	
+	
+	
+}
+
+@media (max-width: 400px)
+{
+	.container{
+		width:50%;
+	}
+	
+	
+	
+	
+}
+
+
+

@@ -145,7 +145,7 @@ body {
 }
 
 #scrollPV{
-	height:770px;
+	height:200px;
   overflow:auto;
   margin:15px -300px 15px 15px;
   padding-right:300px;
@@ -195,7 +195,7 @@ pointer-events: none;
 	z-index: 200;
 	position: absolute;
 	bottom: 0px;
-	/* background: url("%PUBLIC_URL%bottom-fade.png") bottom center repeat; */
+	background: url("images/bottom-fade.png") bottom center repeat;
 }
 
 
@@ -206,7 +206,7 @@ pointer-events: none;
     z-index: 200;
     position: absolute;
     top: 0px;
-    /* background: url("%PUBLIC_URL%/top-fade.png") bottom center repeat; */
+    background: url("images/top-fade.png") bottom center repeat;
 }
 
 #scroll{
@@ -253,7 +253,7 @@ pointer-events: none;
 .circleBase {
 
     border-radius: 50%;
-    /*behavior: url(PIE.htc);*/ 
+    behavior: url(PIE.htc); 
 	
 }
 

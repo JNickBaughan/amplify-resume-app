@@ -1,43 +1,582 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>J. Nick Baughan</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>J. Nick Baughan</title>
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/Content/bootstrap.css" />
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/Content/Custombootstrap.css" />
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/Content/style.css" />
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/Content/styleTablet.css" />
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/Content/styleMobile.css" />
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/Content/styleHeight.css" />
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <script src="javascripts/jquery-1.11.3.min.js"></script>
+      <script src="javascripts/mustache.js"></script>
+      <script src="javascripts/sectionConfig.js"></script>
+      <script src="javascripts/common.js"></script>
+    </head>
+    
+    <body class="container-fluid">
+      <!-- BEGIN: Sticky Header -->
+      <header id="header_container" class="col-md-12">
+        <div id="header">
+          <div class="circleBase header_circle" >	
+            <image id="profileImage" src="%PUBLIC_URL%/images/profileImageDeskTop.png"/>
+          </div>
+          <div class="name">
+            [ J. Nick Baughan ]
+          </div>
+        </div><!--END: #header -->
+        
+        <div id="contact">
+          <div class="row" >
+              <div class="col-xs-3">
+                <div class="innerAnchor">
+                  <a  target="_email" href="mailto:JNickBaughan@Gmail.com?subject=Inquiry from Your site">
+                    <i class="fa fa-envelope-o fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-3">
+                <div class="innerAnchor">
+                  <a href="https://www.linkedin.com/in/nick-baughan-b8a3aa4b/" target="_blank" >
+                    <i class="fa fa-linkedin fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+          </div><!--END: .row -->
+        </div><!--END: #contact -->
+      </header><!--END: header -->
+    
+      <div id="contentWrapper">
+        <div id="resumeWrapper" class="content">
+          <div id="minorContent">
+            <ul class="nav nav-pills nav-stacked"> 
+              <li id="bio" role="presentation" class="active"><a href="#">Bio</a></li>
+              <li id="skills" role="presentation" class><a href="#">Skill Set</a></li>
+              <li id="examples" role="presentation" class><a href="#">Portfolio</a></li>
+              <li id="experience" role="presentation" class><a href="#">Experience</a></li>
+              <li id="education" role="presentation" class><a href="#">Education</a></li>
+            </ul>
+          </div>
+          <div id="mainContentWrapper">
+            <div id="mainContent">
+              <div class="top_fade"></div>
+              <div id="scroll">
+                
+                <div id="bioSection"></div>
+                
+                <span class="contentTitle">Skill Set</span>
+                
+                <div id="content_skills" class="bs-callout bs-callout-default sectionStart sectionEnd container shadowContainer">
+                  <div class="row">
+                    <div class="col-md-6">
+                    
+                      <i class="fa fa-code "></i><h4>Languages, Libraries, Scripts, & Markups-</h4>
+                      <b>Deep knowledge</b>
+                      </br>
+                      Javascript, React, Transact-SQL
+                      </br>
+                      <b>Broad knowledge</b>
+                      </br>
+                      C#, .NET, CSS, Node.js, Express web framework
+              
+                    </div>
+                    <div class="col-md-5">
+                      <i class="fa fa-wrench"></i><h4>Developer tools-</h4>
+                      <b>Broad knowledge</b>
+                      </br>
+                      GIT, Visual Studio, Visual Studio Code							
+                    </div>
+                  </div>
+                  </br>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <i class="fa fa-desktop"></i><h4>Software-</h4>
+                      <b>Broad knowledge</b>
+                      </br>
+                      ArcGIS & ArcGIS Online(it's been a while)
+                                  
+                    </div>
+                    <div class="col-md-5">
+                      <i class="fa fa-terminal"></i>
+                      <h4>Server Technologies-</h4>
+                      <b>Broad knowledge</b>
+                      </br>
+                      ArcGIS Server(it's been a while)
+                            
+                    </div>
+                  </div>
+                </div>
+                
+                <span class="contentTitle">Example</span>
+                
+                
+                <div id="content_examples" class="bs-callout bs-callout-default container sectionEnd sectionStart shadowContainer">
+                  <h4>Portfolio</h4>
+                      </br>
+                  <div class="row">
+                    <div class="col-md-12">
+                      </br>
+                      <b>Parcel Viewers</b>
+                      </br>
+                      <a class="link toggle">Click here</a> to see examples of parcel viewers I've worked on
+                      
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      </br>
+                      <b>React Widget</b>
+                      </br>
+                      <a target="_blank" href="https://codepen.io/collection/DLWxRO/" class="link">Click here</a>
+                      A work in constant progress... React Widgets I've been playing around with using Styled-Components and some CSS animations.
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      </br>
+                      <b>Learning the inner workings of React</b>
+                      </br>
+                      <a target="_blank" href="https://codepen.io/JNickBaughan/pen/yKqmgJ?editors=0010" class="link">Click here</a>
+                      A project to better understand how React works under the hood. Based off of <a target="_blank" href="https://engineering.hexacta.com/didact-learning-how-react-works-by-building-it-from-scratch-51007984e5c5" class="link">this article</a>
+                    </div>
+                  </div>
+                  
+                </div>
+            
+            
+            <span class="contentTitle">Experience</span>
+            <div id="content_experience">
+    
+    
+    
+              <div class="bs-callout bs-callout-default container sectionStart shadowContainer">
+                <div class="row">
+                  <div class="col-md-2 circleImage">
+                    <div class="circleBase type3" >	
+                      <a href="http://www.costar.com/" target="_blank">
+                        <image style="margin-top:22px;margin-left:11px;" src="%PUBLIC_URL%/images/CoStar.png"/>	
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 id="costar">CoStar Group</h4>
+                    Software Engineer
+                    </br>
+                    <a href="http://www.costar.com/" target="_blank">
+                      www.costar.com	
+                    </a>
+                    </br>
+                    2017 to Present
+                  </div>
+                </div>
+                </br>
+                <div class="row">
+                  <div class="col-md-10">
+                    </br>			
+                    CoStar Group, Inc. supplies data, analytics and marketing services to the Real Estate Industry			 
+                    </br></br>
+                     I work as part of a small team working on a internal React application designed to help CoStar's research department manage their day to day interviews and efficiently collect the data that drives the business.
+    
+                     </br></br>
+                     I have designed and implemented several features using React including a component that allows for batch updating inline editable data and a wizard component that allows researchers to manage a broker's listings when they change companies.
+    
+                  </div>
+                </div>
+              </div>
+    
+    
+            
+              <div class="bs-callout bs-callout-default container sectionStart shadowContainer">
+                <div class="row">
+                  <div class="col-md-2 circleImage">
+                    <div class="circleBase type3" >	
+                      <a href="http://www.worldviewsolutions.com/#/" target="_blank">
+                        <image style="margin-top:22px;margin-left:11px;" src="%PUBLIC_URL%/images/WVS.jpg"/>	
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h4>WorldView Solutions</h4>
+                    Application Developer
+                    </br>
+                    <a href="http://www.worldviewsolutions.com/#/" target="_blank">
+                      www.worldviewsolutions.com	
+                    </a>
+                    </br>
+                    2012 to 2017
+                    
+                  </div>
+                </div>
+                </br>
+                <div class="row">
+                  <div class="col-md-10">
+                    </br>
+                     Worldview Solutions is a geospatial information technology consulting firm specializing 
+                     in the delivery of GIS applications and services. They pride themselves on qualitiy
+                     products delivered with an emphasis on customer service. 
+                    </br></br>
+                     In my first few years as a team member with Worldview Solutions my primary responsibility was refactoring the company's
+                     <a class="link toggle">parcel viewer application</a> to be 
+                     a more configurable and customizable product. I configured, deployed, 
+                     and helped maintain 18 of these applications for various municipalities throughout Virginia working closely with the client.
+                    </br></br> 
+                    I worked to design and implement an application for the Virginia Department of Health to 
+                    manage their water pollution citations. My code allowed users to filter through citations and
+                    generate a PDF using their ipads in the field. All data was collected and stored in ESRI's ArcGIS collector application.
+                    </br></br> 
+                    While working with the Virginia Department of Environmental Quality I worked with a team to migrate several of their existing permit modules to a more modern web application. The new system is built with Backbone/Marionette with a restful backend built with ASP.NET's Entity Framework.
+                    </br></br> 
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bs-callout bs-callout-default container shadowContainer">
+                <div class="row">
+                  <div class="col-md-2 circleImage">
+                    <div class="circleBase type3">
+                      <a href="http://business.vcu.edu/departments-and-centers/information-systems/" target="_blank">
+                        <image style="margin-top:22px;margin-left:12px;" src="%PUBLIC_URL%/images/VCU.png"/>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Virginia Commonwealth University</h4>
+                    C# / Web Development Student Tutor
+                    </br>
+                    <a href="http://business.vcu.edu/departments-and-centers/information-systems/" target="_blank">
+                      business.vcu.edu/departments-and-centers	
+                    </a>
+                    </br>
+                    2012
+                  </div>
+                </div>
+                </br>
+                <div class="row">
+                  <div class="col-md-10">
+                  </br>
+                  Worked one-on-one with first year students within the Information System
+                   track in subjects including HTML, CSS, Javascrip, & C#
+                   </br></br>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="bs-callout bs-callout-default container shadowContainer">
+                <div class="row">
+                  <div class="col-md-2 circleImage">
+                    <div class="circleBase type3">
+                      <a href="http://www.ferriswinder.com/" target="_blank">
+                      <image style="margin-top:12px;margin-left:21px;" src="%PUBLIC_URL%/images/ferrisWinder.png"/>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h4>FerrisWinder PLLC</h4>
+                    Bankruptcy Paralegal
+                    </br>
+                    <a href="http://www.ferriswinder.com/" target="_blank">
+                      www.ferriswinder.com
+                    </a>
+                    </br>
+                    2013
+                  </div>
+                </div>
+                </br>
+                <div class="row">
+                  <div class="col-md-10">
+                    </br>
+                    The law office of FerrisWinder PLLC provides legal services in bankruptcy, Real Estate, 
+                    Warranty/Lemon Law and more.
+                    </br></br>
+                    As a bankruptcy paralegal for FerrisWinder I handled multiple 
+                    bankruptcies. This included preparation and filing of petitions, receiving
+                    and reviewing all client financial documents, maintaining scheduling of
+                    cases, and acting as a point of contact between attorneys and clients. 
+                    </br></br>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="bs-callout bs-callout-default container sectionEnd shadowContainer">
+              <div class="row">
+                <div class="col-md-2 circleImage">
+                  <div class="circleBase type3">
+                    <a href="http://www.bww-law.com/" target="_blank">
+                      <image style="margin-top:23px;margin-left:7px;" src="%PUBLIC_URL%/images/BWW.jpg"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h4>Beirman, Ward, & Wood</h4>
+                  Bankruptcy Paralegal | Motion Filer
+                  </br>
+                    <a href="http://www.bww-law.com/" target="_blank">
+                      www.bww-law.com
+                    </a>
+                  </br>
+                  2009 - 2010
+                </div>
+              </div>
+              </br>
+              <div class="row">
+                <div class="col-md-10">
+                </br></br>
+                BWW Law Group, LLC provides legal representation in Maryland, Virginia and District
+                of Columbia to mortgage lenders, mortgage serviceser, banks and other financial institutions.
+                </br></br>
+                As a bankruptcy paralegal/Motion filer with BWW my responsibilities included
+                reviewing financial documentation for cases, preparing and filing Motions for Relief
+                and mailing notification to all proper parties.
+                </br></br>
+                </div>
+                
+              </div>
+            </div>
+            
+            
+            
+            </div> <!-- end experience section -->
+            
+            
+            <span class="contentTitle">Education</span>
+            <div id="content_education">
+              <div class="bs-callout bs-callout-default container sectionStart shadowContainer">
+              <div class="row">
+                <div class="col-md-2 circleImage">
+                  <div class="circleBase type3">
+                    <a href="http://www.wilder.vcu.edu/academic/certificate/geographic.html" target="_blank">
+                      <image style="margin-top:23px;margin-left:12px;" src="%PUBLIC_URL%/images/VCU.png"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h4>Virginia Commonwealth University</h4>
+                  Graduate Certificate of Geographic Information Systems
+                  </br>
+                    <a href="http://www.wilder.vcu.edu/academic/certificate/geographic.html" target="_blank">
+                      www.wilder.vcu.edu/academic
+                    </a>
+                  </br>
+                  Graduated 2010
+                </div>
+              </div>
+              </br>
+              <div class="row">
+                <div class="col-md-10">
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="bs-callout bs-callout-default container shadowContainer">
+              <div class="row">
+                <div class="col-md-2 circleImage">
+                  <div class="circleBase type3">
+                    <a href="http://www.wilder.vcu.edu/academic/urban/" target="_blank">
+                      <image style="margin-top:23px;margin-left:12px;" src="%PUBLIC_URL%/images/VCU.png"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h4>Virginia Commonwealth University</h4>
+                  Bachelors of Science in Urban Studies & Geography
+                  </br>
+                    <a href="http://www.wilder.vcu.edu/academic/urban/" target="_blank">
+                      www.wilder.vcu.edu/academic/urban/
+                    </a>
+                  </br>
+                  Graduated 2009
+                </div>
+              </div>
+              </br>
+              <div class="row">
+                <div class="col-md-10">
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="bs-callout bs-callout-default container endContainer shadowContainer">
+              <div class="row">
+                <div class="col-md-2 circleImage">
+                  <div class="circleBase type3">
+                    <a href="http://www.reynolds.edu/curriculum/business_administrationas.aspx" target="_blank">
+                      <image style="margin-top:23px;margin-left:10px;" src="%PUBLIC_URL%/images/jsrcc.png"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h4>J. Sargeant Reynolds Community College</h4>
+                  <span class="callout">Associates of Science in Business Administration
+                  </br>
+                    <a href="http://www.reynolds.edu/curriculum/business_administrationas.aspx" target="_blank">
+                      www.reynolds.edu
+                    </a>
+                  </br>
+                  Graduated 2006
+                  </span>
+                </div>
+              </div>
+              </br>
+              <div class="row">
+                <div class="col-md-10">
+                  
+                </div>
+              </div>
+            </div>
+            
+            </div><!-- end education section -->
+              </div><!-- END: scroll-->
+              <div class="bottom_fade"></div>
+            </div>
+          </div><!-- #mainContentWrapper-->
+        </div><!--resumeWrapper-->
+        
+        
+        
+        
+        
+        
+        
+        <div id="parcelViewerWrapper" class="hidden content">
+          <div class="top_fade"></div>
+          
+          <div id="scrollPV">
+                <h3 class="startContainer" style="margin-top: 85px;">Parcel Viewers</h3>
+                
+                <p>
+                One of my main responsibilities at WorldView has been refactoring the company's 
+                parcel viewer application to be a more configurable and customizable product. 
+                I have configured, deployed, and currently maintain 18 of these applications 
+                for various municipalities throughout Virginia. The core of the application is built using 
+                ASP.NET MVC.
+                </p>
+                      </br></br>
+                <a class="back link">back to Resume</a>
+                <div class="bs-callout-wide bs-callout-default innerContainter ">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="shadow">
+                        <a href="http://accomack.mapsdirect.net/Account/Logon" target="_blank">
+                          <image class="pvImage" src="%PUBLIC_URL%/images/accomack.png"/>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-9">
+                      <h4>Accomack County</h4>
+                      <a href="http://accomack.mapsdirect.net/Account/Logon" target="_blank">
+                        http://accomack.mapsdirect.net
+                      </a>
+                      </br>
+                      </br>
+                      
+                    </div>
+                  </div>
+                </div>
+                
+            
+                <div class="bs-callout-wide bs-callout-default innerContainter ">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="shadow">
+                        <a href="http://webgis.hampton.gov/sites/ParcelViewer/Account/Logon" target="_blank">
+                          <image class="pvImage" src="%PUBLIC_URL%/images/hampton.png"/>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-9">
+                      <h4>City of Hampton</h4>
+                      <a href="http://webgis.hampton.gov/sites/ParcelViewer/Account/Logon" target="_blank">
+                        http://webgis.hampton.gov
+                      </a>
+                      </br>
+                      </br>
+                      
+                    </div>
+                  </div>
+                </div>
+              
+            
+                <div class="bs-callout-wide bs-callout-default innerContainter endContainer ">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="shadow">
+                        <a href="http://property.jamescitycountyva.gov/JamesCity/Account/Logon" target="_blank">
+                          <image class="pvImage" src="%PUBLIC_URL%/images/jcc.png"/>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-9">
+                      <h4>James City County</h4>
+                      <a href="http://property.jamescitycountyva.gov/JamesCity/Account/Logon" target="_blank">
+                        http://property.jamescitycountyva.gov/JamesCity
+                      </a>
+                      </br>
+                      </br>
+                      
+                    </div>
+                  </div>
+                </div>
+              
+          </div><!--END ScrollPV-->
+        <div class="bottom_fade"></div>
+      </div><!-- END: parcelViewerWrapper -->	 
+      
+      
+      <div id="filterJSWrapper" class="hidden content">
+          <div class="top_fade"></div>
+          <div id="scrollfilter">
+            <h3 class="startContainer" style="margin-top: 85px;">Parcel Viewers</h3>
+                </br>
+                <a class="link" href="http://JNickBaughan.com/FilterJS" target="_blank">
+                FilterJS
+                </a>
+                </br></br>
+                <p>
+                This is a javascript widget I built using the require.js module loader. All planned functionality isn't complete yet
+                but the code takes a json object to configure the searchable fields, the operators, and the value input. The widget
+                manages the state and returns the where clause portions of a query that can be linked to a grid of results or anything else.
+                </p>
+                <p>
+                Soon when it's complete the widget will manage multiple filters and multiple clauses on each filter. The search functionality will
+                be able to return compound where clauses.
+                </p>
+                </br></br>
+                <a class="link back">back to Resume</a>
+          </div><!--END ScrollPV-->
+          <div class="bottom_fade"></div>
+      </div><!--END filterJSWrapper-->
+    
+      <div id="calcWrapper" class="hidden">
+          <div class="top_fade"></div>
+          <div id="scrollcalc">
+            
+          </div><!--END ScrollPV-->
+          <div class="bottom_fade"></div>
+      </div><!--END calcWrapper-->
+                      
+    
+        
+      </div><!--END: #contentWrapper-->
+      
+    
+          
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+        ga('create', 'UA-70092870-1', 'auto');
+        ga('send', 'pageview');
+    
+      </script>	
+        
+    </body>
+    
+    </html> 
