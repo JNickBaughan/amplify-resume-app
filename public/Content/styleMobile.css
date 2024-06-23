@@ -69,6 +69,10 @@
 		right: 0px;
 		z-index: 50000;
 		padding: 8px;
+
+		.row{
+			padding-left: 8.5em;
+		}
 		
 	}
 
